@@ -90,7 +90,7 @@ code
 9. Increase $2 to those books whose price is lower than $10.
 
 ```
-UPDATE Books SET price = +2
+UPDATE Books SET price = price + 2
 WHERE price < 10
 ```
 

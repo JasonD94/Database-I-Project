@@ -26,7 +26,6 @@ In this project, you will work on Books Database which contains information of b
 ```
 SELECT title
 FROM Books
-WHERE *
 ```
 
 2. Find the author who wrote the book named But Is It User Friendly.
@@ -42,7 +41,7 @@ WHERE title = 'But Is It User Friendly'
 (Your result should display both book title and price. )
 
 ```
-SELECT title
+SELECT title, price
 FROM Books
 WHERE price > 20
 ORDER BY ASCEND
@@ -77,7 +76,9 @@ code
 (Your result should display publisher's name.)
 
 ```
-code
+SELECT pub_name
+from Publishers
+GROUP BY Having count(Books.pub_id) > 3
 ```
 
 8. Insert a new publisher, Ramona Publishers, which is located in Dallas, TX and id is 1756.
@@ -89,7 +90,8 @@ code
 9. Increase $2 to those books whose price is lower than $10.
 
 ```
-code
+UPDATE Books SET price = price + 2
+WHERE price < 10
 ```
 
 10. Delete publishers who are located in Chicago.

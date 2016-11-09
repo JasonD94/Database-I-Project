@@ -1,0 +1,10 @@
+"But Is It User Friendly?","1389",$22.95,8780
+"Computer Phobic AND Non-Phobic Individuals: Behavior Variations","0877",$21.59,375
+"Emotional Security: A New Algorithm","0736",$7.99,3336
+"Fifty Years in Buckingham Palace Kitchens","0877",$11.95,15096
+"Is Anger the Enemy?","0736",$10.95,2045
+"Net Etiquette","1389",$25.00,2465
+"Onions, Leeks, and Garlic: Cooking Secrets of the Mediterranean","0877",$20.00,375
+"Secrets of Silicon Valley","1389",$20.00,4095
+"The Busy Executive's Database Guide","1389",$19.99,4095
+"You Can Combat Computer Stress!","0736",$2.99,18722

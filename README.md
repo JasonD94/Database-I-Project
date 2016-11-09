@@ -19,6 +19,14 @@ group. Write the SQL queries in MS access interface and execute them.
 
 - Publishers (pub_id, pub_name, city, state)
 
+## Relations
+
+- Authors is connected to Writes via au_id
+
+- Writes and Books are connected via title
+
+- Books and Publishers are connected via pub_id
+
 ## Notes
 
 - csv subdirectory has each table in CSV format.

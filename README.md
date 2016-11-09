@@ -6,7 +6,7 @@ Project consists of 10 SQL Queries in a Microsoft Access Database.
 ##Project Description:
 
 In this project, you will work on Books Database which contains information of
-books, authors and publisers. Download the database Books.accdb from google
+books, authors and publishers. Download the database Books.accdb from google
 group. Write the SQL queries in MS access interface and execute them.
 
 ##Database tables:
@@ -21,11 +21,13 @@ group. Write the SQL queries in MS access interface and execute them.
 
 ## Relations
 
-- Authors is connected to Writes via au_id
+- Authors is connected to Writes via **au_id**
 
-- Writes and Books are connected via title
+- Writes and Books are connected via **title**
 
-- Books and Publishers are connected via pub_id
+- Books and Publishers are connected via **pub_id**
+
+- Should be possible to link all four tables together using these properties.
 
 ## Notes
 

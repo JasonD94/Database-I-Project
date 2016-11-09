@@ -1,30 +1,45 @@
+################################################################################
+#
+#   Python Script for creating an SQLite version of the Database I M$ Ace$$ db.
+#   Created by: Jason Downing
+#         Date: 11/9/2016
+#   Project by: Jason Downing and Christoper Pearce
+#
+################################################################################
 import pandas
 import sqlite3
 
-# for the csv file, first line should be the column names and all
-# lines after should be the data. for example:
-# name,class,launched
-# California,Tennessee,1921
+# For the CSV file, the first line should be a list of the column names and
+# all of the lines after that should be the data
+# Examples for each table provided below.
 
-# DB here
+# DB here, name "books" matches the DB given in M$ Ace$$ form.
 conn = sqlite3.connect('books.db')
 
-# Table "Product"
-table = "Product"  # name table here
-df = pandas.read_csv('product.csv')
+# Table "Authors". Example for authors:
+# au_id,au_name,address
+# "213-46-8915","Marjorie Green","Oakland"
+table = "Authors"  # name table here
+df = pandas.read_csv('csv/authors.csv')
 df.to_sql(table, conn, if_exists='append', index=False)
 
-# Table "PC"
-table = "PC"  # name table here
-df = pandas.read_csv('pc.csv')
+# Table "Books". Example for books:
+# title,pub_id,price,ytd_sales
+# "But Is It User Friendly?","1389",$22.95,8780
+table = "Books"  # name table here
+df = pandas.read_csv('csv/books.csv')
 df.to_sql(table, conn, if_exists='append', index=False)
 
-# Table "Laptop"
-table = "Laptop"  # name table here
-df = pandas.read_csv('laptop.csv')
+# Table "Publishers". Example for publishers:
+# pub_id,pub_name,city,state
+# "0736","New Moon Books","Boston","MA"
+table = "Publishers"  # name table here
+df = pandas.read_csv('csv/publishers.csv')
 df.to_sql(table, conn, if_exists='append', index=False)
 
-# Table "Printer"
-table = "Printer"  # name table here
-df = pandas.read_csv('printer.csv')
+# Table "Writes". Example for writes:
+# au_id,title,royaltyper
+# "213-46-8915","You Can Combat Computer Stress!",100
+table = "Writes"  # name table here
+df = pandas.read_csv('csv/writes.csv')
 df.to_sql(table, conn, if_exists='append', index=False)

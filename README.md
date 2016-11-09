@@ -43,4 +43,4 @@ group. Write the SQL queries in MS access interface and execute them.
 
 Created by [Jason Downing](https://github.com/JasonD94/) and
 [Chris Pearce](https://github.com/cp0153) during the Fall 2016 semester at
-UMass Lowell.
+[UMass Lowell](https://www.uml.edu/Sciences/computer-science/default.aspx) .

@@ -1,13 +1,16 @@
 # Database-I-Project
-Final Project for the Database I (COMP.3090) course at UMass Lowell.
+Final Project for the
+[Database I (COMP.3090)](http://www.cs.uml.edu/~cchen/309-F16/index.html)
+course at UMass Lowell.
 
-Project consists of 10 SQL Queries in a Microsoft Access Database.
+Project consists of 10 SQL Queries in a
+[Microsoft Access](https://products.office.com/en-us/access) Database.
 
 ##Project Description:
 
 In this project, you will work on Books Database which contains information of
-books, authors and publishers. Download the database Books.accdb from google
-group. Write the SQL queries in MS access interface and execute them.
+books, authors and publishers. Download the database Books.accdb from the
+google group. Write the SQL queries in the M$ Acce$$ interface and execute them.
 
 ##Database tables:
 

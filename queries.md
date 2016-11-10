@@ -147,13 +147,15 @@ Output
 and id is 1756.
 
 ```
-code
+INSERT INTO Publishers (pub_id, pub_name, city, state)
+VALUES (1756, "Ramona Publishers", "Dallas", "TX")
 ```
 
 Output
 ```
-
-
+Query executed successfully:
+INSERT INTO Publishers (pub_id, pub_name, city, state)
+VALUES (1756, "Ramona Publishers", "Dallas", "TX") (took 0ms)
 ```
 
 9. Increase $2 to those books whose price is lower than $10.

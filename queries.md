@@ -66,6 +66,12 @@ WHERE price > 20
 ORDER BY ASCEND
 ```
 
+Output
+```
+
+
+```
+
 4. Find those pairs of books that have the same price.
 (Your result should display book title and each pair of book titles
 should only appear once.)
@@ -74,6 +80,12 @@ should only appear once.)
 SELECT DISTINCT title
 FROM
 WHERE
+```
+
+Output
+```
+
+
 ```
 
 5. List all books published by New Moon Books.
@@ -85,11 +97,23 @@ FROM Books, Publishers
 WHERE pub_name = 'New Moon Books'
 ```
 
+Output
+```
+
+
+```
+
 6. List all authors whose book was published by Binnet & Hardley.
 (Your result should display author's name.)
 
 ```
 code
+```
+
+Output
+```
+
+
 ```
 
 7. Find Publishers which publish more than 3 books.
@@ -101,10 +125,23 @@ from Publishers
 GROUP BY Having count(Books.pub_id) > 3
 ```
 
-8. Insert a new publisher, Ramona Publishers, which is located in Dallas, TX and id is 1756.
+Output
+```
+
+
+```
+
+8. Insert a new publisher, Ramona Publishers, which is located in Dallas, TX
+and id is 1756.
 
 ```
 code
+```
+
+Output
+```
+
+
 ```
 
 9. Increase $2 to those books whose price is lower than $10.
@@ -114,8 +151,20 @@ UPDATE Books SET price = price + 2
 WHERE price < 10
 ```
 
+Output
+```
+
+
+```
+
 10. Delete publishers who are located in Chicago.
 
 ```
 code
+```
+
+Output
+```
+
+
 ```

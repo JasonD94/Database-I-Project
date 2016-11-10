@@ -174,11 +174,13 @@ Output
 10. Delete publishers who are located in Chicago.
 
 ```
-code
+DELETE FROM Publishers
+WHERE Publishers.city = "Chicago"
+
 ```
 
 Output
 ```
-
-
+Query executed successfully: DELETE FROM Publishers
+WHERE Publishers.city = "Chicago" (took 0ms)
 ```

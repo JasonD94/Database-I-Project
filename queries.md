@@ -52,6 +52,7 @@ WHERE title = "But Is It User Friendly?"
 Output
 ```
 au_name
+--------------
 Cheryl Carson
 ```
 
@@ -82,10 +83,10 @@ FROM Books b1, Books b2
 WHERE b1.price = b2.price AND b1.title != b2.title
 ```
 
-Output
+Output (need to fix, currently shows pairs twice)
 ```
-
-
+"Onions, Leeks, and Garlic: Cooking Secrets of the Mediterranean" "Secrets of Silicon Valley"
+"Secrets of Silicon Valley" "Onions, Leeks, and Garlic: Cooking Secrets of the Mediterranean"
 ```
 
 5. List all books published by New Moon Books.
@@ -107,13 +108,24 @@ Output
 (Your result should display author's name.)
 
 ```
-code
+SELECT  Authors.au_name
+FROM Authors
+    JOIN Writes
+      ON Authors.au_id = Writes.au_id
+    JOIN Books
+      ON Books.title = Writes.title
+    JOIN Publishers
+      ON Books.pub_id = Publishers.pub_id
+WHERE Publishers.pub_name = "Binnet & Hardley"
 ```
 
 Output
 ```
-
-
+au_name
+-----------------------
+Livia Karsen
+Reginald Blotchet-Halls
+Sylvia Panteley
 ```
 
 7. Find Publishers which publish more than 3 books.
@@ -121,7 +133,7 @@ Output
 
 ```
 SELECT pub_name
-from Publishers
+FROM Publishers
 GROUP BY Having count(Books.pub_id) > 3
 ```
 

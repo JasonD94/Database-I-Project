@@ -80,13 +80,15 @@ should only appear once.)
 ```
 SELECT DISTINCT b1.title, b2.title
 FROM Books b1, Books b2
-WHERE b1.price = b2.price AND b1.title != b2.title
+WHERE b1.price = b2.price AND b1.title < b2.title
 ```
 
 Output (need to fix, currently shows pairs twice)
 ```
-"Onions, Leeks, and Garlic: Cooking Secrets of the Mediterranean" "Secrets of Silicon Valley"
-"Secrets of Silicon Valley" "Onions, Leeks, and Garlic: Cooking Secrets of the Mediterranean"
+title, title
+------------
+"Onions, Leeks, and Garlic: Cooking Secrets of the Mediterranean",
+Secrets of Silicon Valley
 ```
 
 5. List all books published by New Moon Books.

@@ -14,7 +14,7 @@ import sqlite3
 # Examples for each table provided below.
 
 # DB here, name "books" matches the DB given in M$ Ace$$ form.
-conn = sqlite3.connect('books.db')
+conn = sqlite3.connect('db/books.db')
 
 # Table "Authors". Example for authors:
 # au_id,au_name,address

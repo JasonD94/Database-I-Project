@@ -77,9 +77,9 @@ Output
 should only appear once.)
 
 ```
-SELECT DISTINCT title
-FROM
-WHERE
+SELECT DISTINCT b1.title, b2.title
+FROM Books b1, Books b2
+WHERE b1.price = b2.price AND b1.title != b2.title
 ```
 
 Output

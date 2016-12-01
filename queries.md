@@ -130,6 +130,19 @@ WHERE Publishers.pub_id = Books.pub_id
 GROUP BY Publishers.pub_name
 ```
 
+This might work!!
+```
+SELECT pub_name
+FROM
+(
+  SELECT DISTINCT pub_name, COUNT(*) AS book_count
+  FROM Publishers, Books
+  WHERE Publishers.pub_id = Books.pub_id
+  GROUP BY Publishers.pub_name
+)
+WHERE book_count > 3
+```
+
 Output:
 ```
 stuff

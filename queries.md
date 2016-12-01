@@ -115,8 +115,11 @@ Sylvia Panteley
 (Your result should display publisher's name.)
 ```
 SELECT pub_name
-FROM Publishers
-GROUP BY Having count(Books.pub_id) > 3
+FROM (Publishers
+INNER JOIN Books
+ON Books.pub_id)
+GROUP BY pub_name
+HAVING COUNT (Books.pub_id) > 3;
 ```
 
 Output:

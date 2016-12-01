@@ -46,6 +46,8 @@ Cheryl Carson
 3\. List all books whose price is greater than $20.
 List your result in the ascending order of the price.
 (Your result should display both book title and price. )
+
+This is the MS Access version:
 ```
 SELECT title, price
 FROM Books
@@ -55,7 +57,11 @@ ORDER BY price ASC
 
 Output:
 ```
-stuff
+title | price
+--------------
+"Computer Phobic AND Non-Phobic Individuals: Behavior Variations" "21.59"
+"But Is It User Friendly?"  "22.95"
+"Net Etiquette" "25.0"
 ```
 
 4\. Find those pairs of books that have the same price.
@@ -67,7 +73,7 @@ FROM Books b1, Books b2
 WHERE b1.price = b2.price AND b1.title < b2.title
 ```
 
-Output: (need to fix, currently shows pairs twice)
+Output:
 ```
 title, title
 ------------
@@ -85,7 +91,18 @@ WHERE pub_name = 'New Moon Books'
 
 Output:
 ```
-stuff
+title
+---------------
+"But Is It User Friendly?"
+"Computer Phobic AND Non-Phobic Individuals: Behavior Variations"
+"Emotional Security: A New Algorithm"
+"Fifty Years in Buckingham Palace Kitchens"
+"Is Anger the Enemy?"
+"Net Etiquette"
+"Onions, Leeks, and Garlic: Cooking Secrets of the Mediterranean"
+"Secrets of Silicon Valley"
+"The Busy Executive's Database Guide"
+"You Can Combat Computer Stress!"
 ```
 
 6\. List all authors whose book was published by Binnet & Hardley.
@@ -113,14 +130,6 @@ Sylvia Panteley
 
 7\. Find Publishers which publish more than 3 books.
 (Your result should display publisher's name.)
-```
-SELECT pub_name
-FROM (Publishers
-INNER JOIN Books
-ON Books.pub_id)
-GROUP BY pub_name
-HAVING COUNT (Books.pub_id) > 3;
-```
 
 This gets count of books:
 ```
@@ -130,7 +139,7 @@ WHERE Publishers.pub_id = Books.pub_id
 GROUP BY Publishers.pub_name
 ```
 
-This might work!!
+This is the full query which prints just the publisher with > 3 books:
 ```
 SELECT pub_name
 FROM
@@ -145,7 +154,9 @@ WHERE book_count > 3
 
 Output:
 ```
-stuff
+pub_name
+---------------------
+Algodata Infosystems
 ```
 
 8\. Insert a new publisher, Ramona Publishers, which is located in Dallas, TX

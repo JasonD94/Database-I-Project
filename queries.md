@@ -25,17 +25,6 @@ Net Etiquette
 Secrets of Silicon Valley
 The Busy Executive's Database Guide
 You Can Combat Computer Stress!
-But Is It User Friendly?
-Computer Phobic AND Non-Phobic Individuals: Behavior Variations
-Emotional Security: A New Algorithm
-Fifty Years in Buckingham Palace Kitchens
-Is Anger the Enemy?
-Net Etiquette
-"Onions, Leeks, and Garlic: Cooking Secrets of the Mediterranean"
-Secrets of Silicon Valley
-The Busy Executive's Database Guide
-You Can Combat Computer Stress!
-
 ```
 
 2. Find the author who wrote the book named But Is It User Friendly.

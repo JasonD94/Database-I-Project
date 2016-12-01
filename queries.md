@@ -45,7 +45,7 @@ List your result in the ascending order of the price.
 SELECT title, price
 FROM Books
 WHERE price > 20
-ORDER BY ASCEND
+ORDER BY price ASC
 ```
 Output:
 ```

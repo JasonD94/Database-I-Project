@@ -122,6 +122,14 @@ GROUP BY pub_name
 HAVING COUNT (Books.pub_id) > 3;
 ```
 
+This gets count of books:
+```
+SELECT DISTINCT pub_name, COUNT(*) AS 'number of books'
+FROM Publishers, Books
+WHERE Publishers.pub_id = Books.pub_id
+GROUP BY Publishers.pub_name
+```
+
 Output:
 ```
 stuff

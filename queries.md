@@ -146,7 +146,8 @@ WHERE price < 10
 
 Output:
 ```
-stuff
+Query executed successfully: UPDATE Books SET price = price + 2
+WHERE price < 10 (took 0ms)
 ```
 
 10\. Delete publishers who are located in Chicago.

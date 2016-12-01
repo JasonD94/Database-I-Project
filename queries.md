@@ -92,12 +92,12 @@ stuff
 (Your result should display author's name.)
 ```
 SELECT DISTINCT Authors.au_name
-FROM Authors
-  JOIN Writes
-    ON Authors.au_id = Writes.au_id
-  JOIN Books
-    ON Books.title = Writes.title
-  JOIN Publishers
+FROM ((Authors
+  INNER JOIN Writes
+    ON Authors.au_id = Writes.au_id)
+  INNER JOIN Books
+    ON Books.title = Writes.title)
+  INNER JOIN Publishers
     ON Books.pub_id = Publishers.pub_id
 WHERE Publishers.pub_name = "Binnet & Hardley"
 ```

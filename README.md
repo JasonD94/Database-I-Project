@@ -6,13 +6,13 @@ course at UMass Lowell.
 Project consists of 10 SQL Queries in a
 [Microsoft Access](https://products.office.com/en-us/access) Database.
 
-##Project Description:
+## Project Description:
 
 In this project, you will work on Books Database which contains information of
 books, authors and publishers. Download the database Books.accdb from the
 google group. Write the SQL queries in the M$ Acce$$ interface and execute them.
 
-##Database tables:
+## Database tables:
 
 - Authors (au_id, au_name, address)
 

@@ -8,7 +8,7 @@
 ################################################################################
 import pandas
 import sqlite3
-
+ 
 # For the CSV file, the first line should be a list of the column names and
 # all of the lines after that should be the data
 # Examples for each table provided below.
